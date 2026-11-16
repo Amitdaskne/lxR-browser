@@ -1,0 +1,9 @@
+<resources>
+    <color name="fx_primary">#9059FF</color> <!-- Firefox Purple -->
+    <color name="fx_secondary">#FF4F5E</color> <!-- Firefox Orange -->
+    <color name="bg_main">#FFFFFF</color>
+    <color name="bg_surface">#F9F9FB</color>
+    <color name="text_main">#15141A</color>
+    <color name="text_sub">#5B5B66</color>
+    <color name="icon_color">#15141A</color>
+</resources>

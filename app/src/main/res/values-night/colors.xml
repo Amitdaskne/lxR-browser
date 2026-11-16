@@ -1,0 +1,9 @@
+<resources>
+    <color name="fx_primary">#9059FF</color>
+    <color name="fx_secondary">#FF4F5E</color>
+    <color name="bg_main">#1C1B22</color> <!-- Dark Mode Background -->
+    <color name="bg_surface">#2B2A33</color>
+    <color name="text_main">#FBFBFE</color>
+    <color name="text_sub">#CFCFD8</color>
+    <color name="icon_color">#FBFBFE</color>
+</resources>
