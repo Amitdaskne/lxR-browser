@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/chrome_white">
+
+    <!-- TOP BAR -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="8dp">
+        
+        <ImageView android:id="@+id/btnBackTop" android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous" android:tint="@color/chrome_icon" android:padding="8dp"/>
+            
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp"
+            android:background="@drawable/bg_address_bar" android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp">
+            
+            <ImageView android:id="@+id/ivLock" android:layout_width="16dp" android:layout_height="16dp"
+                android:src="@android:drawable/ic_secure" android:tint="@color/chrome_icon"/>
+                
+            <EditText android:id="@+id/etUrl" android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="match_parent" android:background="@null" android:hint="Search or type URL"
+                android:textColor="@color/chrome_text" android:textColorHint="@color/chrome_icon"
+                android:textSize="16sp" android:singleLine="true" android:inputType="textUri" android:paddingStart="8dp"
+                android:imeOptions="actionGo"/>
+        </LinearLayout>
+
+        <ImageView android:id="@+id/btnMenu" android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_more" android:tint="@color/chrome_icon" android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- LOADING BAR -->
+    <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="3dp"
+        android:progressDrawable="@drawable/custom_progress_bar" android:visibility="gone"/>
+
+    <!-- WEB VIEW -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!-- BOTTOM NAV -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+        android:orientation="horizontal" android:background="@color/chrome_white" android:elevation="8dp"
+        android:gravity="space_around">
+        
+        <ImageView android:id="@+id/btnBack" android:layout_width="50dp" android:layout_height="match_parent"
+            android:src="@android:drawable/ic_media_previous" android:tint="@color/chrome_icon" android:padding="12dp"/>
+            
+        <ImageView android:id="@+id/btnForward" android:layout_width="50dp" android:layout_height="match_parent"
+            android:src="@android:drawable/ic_media_next" android:tint="@color/chrome_icon" android:padding="12dp"/>
+            
+        <ImageView android:id="@+id/btnHome" android:layout_width="50dp" android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_myplaces" android:tint="@color/chrome_icon" android:padding="12dp"/>
+            
+        <ImageView android:id="@+id/btnRefresh" android:layout_width="50dp" android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_rotate" android:tint="@color/chrome_icon" android:padding="12dp"/>
+    </LinearLayout>
+</LinearLayout>

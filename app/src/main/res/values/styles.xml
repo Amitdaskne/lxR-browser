@@ -1,0 +1,9 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/chrome_white</item>
+        <item name="colorPrimaryDark">@color/chrome_white</item>
+        <item name="android:windowBackground">@color/chrome_white</item>
+        <item name="android:statusBarColor">@color/chrome_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
